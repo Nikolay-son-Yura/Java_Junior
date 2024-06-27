@@ -10,23 +10,24 @@ public class RandomDateAnnotationProcessor {
         java.util.Random random = new java.util.Random();
         Class<?> objClass = obj.getClass();
         for (Field field : objClass.getDeclaredFields()) {
-            if (field.isAnnotationPresent(RandomDate.class)) {
-                RandomDate annotation = field.getAnnotation(RandomDate.class);
-                long min = annotation.min();
-                long max = annotation.max();
-                if (min < max) {
-                    Date date = new Date(random.nextLong());
-                    try {
-                        field.setAccessible(true);
-                        if (field.getType().isAssignableFrom(Date.class)) {
-                            field.set(obj, date);
-                        }
-                    } catch (IllegalAccessException e) {
-                        System.err.println("Не удалось вставить значение в поле: " + e.getMessage());
+            if (field.isAnnotationPresent(RandomDate.class)) ;//&& field.getType().isAssignableFrom(Date.class)) {
+            RandomDate annotation = field.getAnnotation(RandomDate.class);
+            long min = annotation.min();
+            long max = annotation.max();
+            if (min < max) {
+                Date date = new Date(random.nextLong());
+                try {
+                    field.setAccessible(true);
+                    if (field.getType().isAssignableFrom(Date.class)) {
+                        field.set(obj, date);
                     }
-                }else System.out.println("максимальная дата должна быть больше минимальной");
-            }
-
+                    //if else(field.getType().isAssignableFrom(Instant.class)) и тд. я как понимаю тут как то так должно быть
+                } catch (IllegalAccessException e) {
+                    System.err.println("Не удалось вставить значение в поле: " + e.getMessage());
+                }
+            } else System.out.println("максимальная дата должна быть больше минимальной");
         }
+
     }
+}
 }
