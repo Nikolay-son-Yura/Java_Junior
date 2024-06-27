@@ -25,7 +25,7 @@ public class RandomDateAnnotationProcessor {
                 } catch (IllegalAccessException e) {
                     System.err.println("Не удалось вставить значение в поле: " + e.getMessage());
                 }
-            } else System.out.println("максимальная дата должна быть больше минимальной");
+            } else System.out.println("Максимальная дата должна быть больше минимальной");
         }
 
     }
