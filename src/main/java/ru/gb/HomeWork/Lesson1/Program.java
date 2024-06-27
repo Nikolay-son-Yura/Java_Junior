@@ -28,11 +28,11 @@ public class Program {
 
 //
 //        System.out.println(Person.findMostYoungestPerson(list));//Найти самого молодого сотрудника
-//        System.out.println(Person.findMostExpensiveDepartment(list));//Найти департамент, в котором работает сотрудник с самой большой зарплатой
+        System.out.println(Person.findMostExpensiveDepartment(list));//Найти департамент, в котором работает сотрудник с самой большой зарплатой
 //        System.out.println(Person.groupByDepartment(list));//Сгруппировать сотрудников по департаментам
 //        System.out.println(Person.groupByDepartmentName(list));//Сгруппировать сотрудников по названиям департаментов
 //        System.out.println(Person.getDepartmentOldestPerson(list));//В каждом департаменте найти самого старшего сотрудника
-        System.out.println(Person.cheapPersonsInDepartment(list));//Найти сотрудников с минимальными зарплатами в своем отделе
+//        System.out.println(Person.cheapPersonsInDepartment(list));//Найти сотрудников с минимальными зарплатами в своем отделе
     }
 
 }

@@ -70,7 +70,7 @@ public class Person {
 
         return people.stream()
                 .max(Comparator.comparingDouble(Person::getSalary))
-                .flatMap(x -> Optional.ofNullable(x.getDepart()));
+                .map(Person::getDepart);
     }
 
     /**

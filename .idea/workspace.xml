@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson1/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson1/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson1/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="сщььше 1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/ObjectCreator2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/RandomDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/RandomDateAnnotationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson3/JDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson3/JDBC2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -45,6 +49,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Java_Junior [:Homework.main()].executor": "Run",
+    "Gradle.Java_Junior [:JDBC.main()].executor": "Run",
+    "Gradle.Java_Junior [:JDBC2.main()].executor": "Run",
     "Gradle.Java_Junior [:Main.main()].executor": "Run",
     "Gradle.Java_Junior [:Program.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -54,13 +60,39 @@
     "onboarding.tips.debug.path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Application.ru.gb.HomeWork.Lesson2.Program">
     <configuration name="Homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson1.Homework" />
       <module name="Java_Junior.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.gb.HomeWork.Lesson1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson3.JDBC" />
+      <module name="Java_Junior.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBC2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson3.JDBC2" />
+      <module name="Java_Junior.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,8 +113,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.gb.HomeWork.Lesson2.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson2.Program" />
+      <module name="Java_Junior.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JDBC2" />
+        <item itemvalue="Application.JDBC" />
+        <item itemvalue="Application.ru.gb.HomeWork.Lesson2.Program" />
         <item itemvalue="Application.Program" />
         <item itemvalue="Application.Homework" />
       </list>
@@ -97,6 +145,19 @@
       <option name="presentableId" value="Default" />
       <updated>1719038788393</updated>
     </task>
+    <task id="LOCAL-00001" summary="сщььше 1">
+      <option name="closed" value="true" />
+      <created>1719059441965</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719059441965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="сщььше 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="сщььше 1" />
   </component>
 </project>
