@@ -1,6 +1,7 @@
 package ru.gb.HomeWork.Lesson2;
 
 import java.lang.reflect.Field;
+import java.time.Instant;
 import java.util.Date;
 
 
@@ -20,8 +21,10 @@ public class RandomDateAnnotationProcessor {
                     field.setAccessible(true);
                     if (field.getType().isAssignableFrom(Date.class)) {
                         field.set(obj, date);
+                    } else if (field.getType().isAssignableFrom(Instant.class)) {
+                        field.set(obj,date.toInstant());
                     }
-                    //if else(field.getType().isAssignableFrom(Instant.class)) и тд. я как понимаю тут как то так должно быть
+
                 } catch (IllegalAccessException e) {
                     System.err.println("Не удалось вставить значение в поле: " + e.getMessage());
                 }
