@@ -9,6 +9,7 @@ package ru.gb.HomeWork.Lesson3;
 ** Написать метод, который загружает Map<String, List>, в которой маппинг department.name -> <person.name> Пример: {"department #1", ["person #1", "person #2"]}, {"department #2", ["person #3", "person #4"]}
 *** Создать классы-обертки над таблицами, и в пунктах 4, 5, 6 возвращать объекты.
  */
+
 import java.sql.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -24,7 +25,7 @@ public class JDBC {
             insertDataPerson(connection);
             updateData(connection);
             selectData(connection);
-            departmentNameByPersonID(connection,2);
+            departmentNameByPersonID(connection, 2);
         } catch (SQLException e) {
             System.err.println("Во время подключения произошла ошибка: " + e.getMessage());
         }
@@ -118,13 +119,13 @@ public class JDBC {
         }
     }
 
-    private static void departmentNameByPersonID(Connection connection,long personID) throws SQLException {
+    private static void departmentNameByPersonID(Connection connection, long personID) throws SQLException {
         try (Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery("select department.id, department.name" +
                     "  from department   " +
                     " join person " +
                     " on department.id = person.department_id" +
-                    " where person.id = "+ personID );
+                    " where person.id = " + personID);
 
             while (resultSet.next()) {
                 String departmentName = resultSet.getString("department.name");
@@ -161,34 +162,4 @@ public class JDBC {
             }
         }
     }
-    private static void DepartmentPersons(Connection connection) throws SQLException {
-        try (Statement statement = connection.createStatement()) {
-            Map<String,String>dp=new HashMap<>();
-            ResultSet resultSet = statement.executeQuery("select name,  from person");
-        }
-    }
-    /**
-     * Пункт 4
-     */
-    private static String getPersonDepartmentName(Connection connection, long personId) throws SQLException {
-        // FIXME: Ваш код тут
-        throw new UnsupportedOperationException();
-    }
-
-    /**
-     * Пункт 5
-     */
-    private static Map<String, String> getPersonDepartments(Connection connection) throws SQLException {
-        // FIXME: Ваш код тут
-        throw new UnsupportedOperationException();
-    }
-
-    /**
-     * Пункт 6
-     */
-    private static Map<String, List<String>> getDepartmentPersons(Connection connection) throws SQLException {
-        // FIXME: Ваш код тут
-        throw new UnsupportedOperationException();
-    }
-
 }
