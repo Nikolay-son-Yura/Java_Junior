@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="commit 3.1">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/RandomDateAnnotationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson2/RandomDateAnnotationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/PostComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,14 +56,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/HomeWork/Lesson3",
-    "onboarding.tips.debug.path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/Main.java"
+    "last_opened_file_path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/resources",
+    "onboarding.tips.debug.path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Kolka\Учеба\Учеба\Java Junior\projekt\Java_Junior\src\main\resources" />
+      <recent name="C:\Kolka\Учеба\Учеба\Java Junior\projekt\Java_Junior\src\main\java\ru\gb\HomeWork\Lesson4" />
       <recent name="C:\Kolka\Учеба\Учеба\Java Junior\projekt\Java_Junior\src\main\java\ru\gb\HomeWork\Lesson3" />
       <recent name="C:\Kolka\Учеба\Учеба\Java Junior\projekt\Java_Junior\src\main\java\ru\gb\HomeWork\Lesson3\Task" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.gb.HomeWork.Lesson4" />
+      <recent name="ru.gb.HomeWork.Lesson4.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Application.JDBC">
@@ -200,7 +216,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719740786200</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="commit 3.1">
+      <option name="closed" value="true" />
+      <created>1719741076326</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719741076326</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit 3.1">
+      <option name="closed" value="true" />
+      <created>1719741304301</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719741304301</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
