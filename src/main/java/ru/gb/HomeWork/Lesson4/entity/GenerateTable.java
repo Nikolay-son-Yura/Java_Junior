@@ -9,7 +9,7 @@ public class GenerateTable {
     private List<PostComment> comments;
     String[] postText = {"Новости", "Мир животных", "Как правильно спросить у Яндекса", "Самое важное", "Разбор кода"};
     String[] commentText = {"Все очень сложно", "Как это у них получается?", "Ну с этим понятно", "На оси вертель эти связи"};
-    String[] users = {"Колька", "Тот самый парень", "Умник"};
+//    String[] users = {"Колька", "Тот самый парень", "Умник"};
 
     public GenerateTable() {
         posts = new ArrayList<>();
@@ -28,10 +28,10 @@ public class GenerateTable {
     }
 
     public void generatePostComments() {
-        ArrayList<PostComment> postComments = new ArrayList<>();
+
         long comID = 1L;
         for (Post s : posts) {
-            postComments.add(new PostComment(comID, commentText[random(0, commentText.length)], s));
+            comments.add(new PostComment(comID, commentText[random(0, commentText.length)], s));
             comID++;
         }
 

@@ -1,6 +1,6 @@
 package ru.gb.HomeWork.Lesson4.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "users")

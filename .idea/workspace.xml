@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="commit 3.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/PostComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="commit 4">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +45,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.Docker Image.executor": "Run",
     "Gradle.Java_Junior [:Homework.main()].executor": "Run",
     "Gradle.Java_Junior [:JDBC.main()].executor": "Run",
     "Gradle.Java_Junior [:JDBC2.main()].executor": "Run",
@@ -59,8 +57,9 @@
     "last_opened_file_path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/resources",
     "onboarding.tips.debug.path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/Main.java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -75,20 +74,7 @@
       <recent name="ru.gb.HomeWork.Lesson4.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBC">
-    <configuration name="Homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson1.Homework" />
-      <module name="Java_Junior.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gb.HomeWork.Lesson1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ru.gb.HomeWork.Lesson4.Program">
     <configuration name="JDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson3.JDBC" />
       <module name="Java_Junior.main" />
@@ -115,19 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson1.Program" />
-      <module name="Java_Junior.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gb.HomeWork.Lesson1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ru.gb.HomeWork.Lesson2.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson2.Program" />
       <module name="Java_Junior.main" />
@@ -141,13 +114,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ru.gb.HomeWork.Lesson4.Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson4.Program" />
+      <module name="Java_Junior.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="sha256:f23dc7cd74bd7693fc164fd829b9a7fa1edf8eaaed488c117312aef2a48cafaa" />
+          <option name="containerName" value="posgreSQL" />
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="POSTGRES_PASSWORD " />
+                <option name="value" value="pass" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="5433" />
+                <option name="hostPort" value="5433" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
+      <deployment type="docker-image">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDBC2" />
-        <item itemvalue="Application.JDBC" />
+        <item itemvalue="Application.ru.gb.HomeWork.Lesson4.Program" />
         <item itemvalue="Application.ru.gb.HomeWork.Lesson2.Program" />
-        <item itemvalue="Application.Program" />
-        <item itemvalue="Application.Homework" />
+        <item itemvalue="Application.JDBC" />
+        <item itemvalue="Application.JDBC2" />
       </list>
     </recent_temporary>
   </component>
@@ -232,8 +248,27 @@
       <option name="project" value="LOCAL" />
       <updated>1719741304301</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit 4">
+      <option name="closed" value="true" />
+      <created>1720019721015</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1720019721015</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="сщььше 1" />
@@ -242,6 +277,7 @@
     <MESSAGE value="commit 2,2" />
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 3.1" />
+    <MESSAGE value="commit 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 4" />
   </component>
 </project>

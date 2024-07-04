@@ -28,6 +28,11 @@ public class Post {
 //        this.userId = userId;
     }
 
+    public Post(String name, List<PostComment> comments) {
+        this.name = name;
+        this.comments = comments;
+    }
+
     public Post() {
     }
     //    public Post(String name, Users userId) {

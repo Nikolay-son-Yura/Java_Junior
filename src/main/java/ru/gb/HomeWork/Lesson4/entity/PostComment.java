@@ -30,6 +30,11 @@ public class PostComment {
 //        this.userId = userId;
     }
 
+    public PostComment(String text, Post post) {
+        this.text = text;
+        this.post = post;
+    }
+
     public PostComment() {
     }
     //    public PostComment(String text, Post post_id, Users userId) {

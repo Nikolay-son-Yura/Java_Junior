@@ -35,54 +35,60 @@ import java.util.List;
 
 public class Program {
     public static void main(String[] args) {
-        GenerateTable generateTable=new GenerateTable();
+        GenerateTable generateTable = new GenerateTable();
 
         Configuration configuration = new Configuration();
         configuration.configure();
         SessionFactory sessionFactory = configuration.buildSessionFactory();
 
-        createTable(generateTable.getPosts(),sessionFactory);
-        createTable(generateTable.getComments(),sessionFactory);
-        insertTable(new Post(1L,"Post#1"),sessionFactory);
-        insertTable(new PostComment(20L,"Смотреть всем", readTable(Post.class,1l,sessionFactory)),sessionFactory);
+        createTable(generateTable.getPosts(), sessionFactory);
+        createTable(generateTable.getComments(), sessionFactory);
+        insertTable(new Post(1L, "Post#1"), sessionFactory);
+        insertTable(new PostComment("Смотреть всем", readTable(Post.class, 1l, sessionFactory)), sessionFactory);
         System.out.println(readTable(Post.class, 1L, sessionFactory));
-
-
 
 
     }
 
-    public static <T> T readTable(Class<T> className, long id, SessionFactory sessionFactory){
-        try(Session session = sessionFactory.openSession()){
+    private static <T> void createTable(List<T> element, SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
+            for (T t : element) {
+                Transaction tx = session.beginTransaction();
+                session.save(t);
+                tx.commit();
+
+            }
+        }
+    }
+
+    public static <T> T readTable(Class<T> className, long id, SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
             return session.find(className, id);
+        }
+    }
+
+    public <T> void updateTable(T elem, SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+            session.merge(elem);
+            tx.commit();
+        }
+    }
+
+    private static <T> void insertTable(T element, SessionFactory sessionFactory) {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+            session.persist(element);
+            tx.commit();
         }
     }
 
     private static <T> void deleteTable(T elem, SessionFactory sessionFactory) {
         try (Session session = sessionFactory.openSession()) {
             Transaction tx = session.beginTransaction();
-            session.remove(elem); // delete
+            session.remove(elem);
             tx.commit();
 
         }
     }
-
-     private static <T> void createTable(List<T> element,SessionFactory sessionFactory){
-         try (Session session = sessionFactory.openSession()) {
-             for (T t : element) {
-                 session.beginTransaction();
-                 session.save(element);
-                 session.getTransaction().commit();
-
-             }
-         }
-     }
-
-     private static <T> void insertTable(T element,SessionFactory sessionFactory){
-         try (Session session = sessionFactory.openSession()) {
-             Transaction tx = session.beginTransaction();
-             session.persist(element);
-             tx.commit();
-         }
-     }
 }
