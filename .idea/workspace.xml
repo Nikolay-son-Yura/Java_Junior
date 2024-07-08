@@ -5,11 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f207d8b-e8be-4a24-ba2f-8c5f9274c1cf" name="Changes" comment="commit 4">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/AbstractRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/BroadcastRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/DisconnectRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/JsonMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/ListRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/ListResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/SendMessageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson5/dfgh.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/GenerateTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/gb/HomeWork/Lesson4/entity/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +58,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Docker.Docker Image.executor": "Run",
+    "Gradle.Java_Junior [:ChatClient.main()].executor": "Run",
+    "Gradle.Java_Junior [:ChatServer.main()].executor": "Run",
     "Gradle.Java_Junior [:Homework.main()].executor": "Run",
     "Gradle.Java_Junior [:JDBC.main()].executor": "Run",
     "Gradle.Java_Junior [:JDBC2.main()].executor": "Run",
     "Gradle.Java_Junior [:Main.main()].executor": "Run",
     "Gradle.Java_Junior [:Program.main()].executor": "Run",
+    "Gradle.Java_Junior [:dfgh.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/resources",
+    "last_opened_file_path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java",
     "onboarding.tips.debug.path": "C:/Kolka/Учеба/Учеба/Java Junior/projekt/Java_Junior/src/main/java/ru/gb/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -74,13 +90,13 @@
       <recent name="ru.gb.HomeWork.Lesson4.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ru.gb.HomeWork.Lesson4.Program">
-    <configuration name="JDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson3.JDBC" />
+  <component name="RunManager" selected="Application.dfgh">
+    <configuration name="ChatClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson5.ChatClient" />
       <module name="Java_Junior.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gb.HomeWork.Lesson3.*" />
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +104,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBC2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson3.JDBC2" />
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson5.ChatServer" />
       <module name="Java_Junior.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gb.HomeWork.Lesson3.*" />
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dfgh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.gb.HomeWork.Lesson5.dfgh" />
+      <module name="Java_Junior.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.gb.HomeWork.Lesson5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,43 +156,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="sha256:f23dc7cd74bd7693fc164fd829b9a7fa1edf8eaaed488c117312aef2a48cafaa" />
-          <option name="containerName" value="posgreSQL" />
-          <option name="envVars">
-            <list>
-              <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_PASSWORD " />
-                <option name="value" value="pass" />
-              </DockerEnvVarImpl>
-            </list>
-          </option>
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="5433" />
-                <option name="hostPort" value="5433" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-image" temporary="true">
       <deployment type="docker-image">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.dfgh" />
+      <item itemvalue="Application.ChatClient" />
+      <item itemvalue="Application.ChatServer" />
+      <item itemvalue="Application.ru.gb.HomeWork.Lesson2.Program" />
+      <item itemvalue="Application.ru.gb.HomeWork.Lesson4.Program" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.dfgh" />
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.ru.gb.HomeWork.Lesson4.Program" />
         <item itemvalue="Application.ru.gb.HomeWork.Lesson2.Program" />
-        <item itemvalue="Application.JDBC" />
-        <item itemvalue="Application.JDBC2" />
       </list>
     </recent_temporary>
   </component>
